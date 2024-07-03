@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
        <div className="master__place"> 
       <Header/>
         {children}
-      {/* <Footer /> */}
+      <Footer />
       </div>
       </body>
     </html>
