@@ -38,7 +38,7 @@ function Footer() {
                     <div className="footer__h-line"></div>
                     <div className="footer__enlaces">
                         <div className="footer__instagram"><Image src={InstagramIcon}></Image><Link href="soyandres.es"> Instagram</Link></div>
-                        <Link href="soyandres.es">hola@theplace.com</Link>
+                        <Link href="soyandres.es" className="footer__child-1">hola@theplace.com</Link>
                         <Link href="soyandres.es">961 123 456</Link>
                         <Link href="soyandres.es">Política de privacidad</Link>
                         <Link href="soyandres.es">Política de cookies</Link>

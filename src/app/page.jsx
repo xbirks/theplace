@@ -12,10 +12,10 @@ export default function HomePage() {
     <>
         <Intro />
         <InmueblesPadre />
-        {/* <InternacionalesPadre />
+        <InternacionalesPadre />
         <NosotrosPadre />
         <InteresPadre />
-        <FaqPadre /> */}
+        <FaqPadre />
     
   </>
   );

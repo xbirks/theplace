@@ -831,9 +831,9 @@ letter-spacing: -0.64px;
 .interes__item-index{
     box-sizing: border-box;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
     gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -928,7 +928,7 @@ letter-spacing: -0.64px;
         position: absolute;
         top: 0;
         right: 0;
-        margin-top: 10px;
+        margin-top: 8px;
         margin-right: 10px;
         width: 10px;
         text-align: center;
@@ -944,7 +944,7 @@ letter-spacing: -0.64px;
     h3 {
         color: $marine-place;
         font-family: $neue;
-        font-size: 28px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: 110%;
@@ -1094,10 +1094,11 @@ letter-spacing: -0.64px;
     
         h4{
             position: absolute;
-            top: 0px;
+            top: 15px;
+            left: 5px;
             color: $white-place;
             font-family: $neue;
-            font-size: 32px;
+            font-size: 24px;
             font-style: normal;
             font-weight: 400;
             line-height: 106%; 
@@ -1138,7 +1139,7 @@ letter-spacing: -0.64px;
 
     .footer__enlaces{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
         gap: 10px;
         justify-content: center;
         margin-left: 4vw;
@@ -1180,13 +1181,63 @@ letter-spacing: -0.64px;
 
 //RESPONSIVE
 
+@media only screen and (max-width: 1257px) {
+    .footer__child-1{
+        margin-top: 20px;
+    }
+
+    .footer__master .footer__services-item img {
+        height: 230px;
+    }
+
+    .footer__master .footer__enlaces a {
+        text-align: center;
+    }
+
+    .footer__master .footer__enlaces .footer__instagram a {
+        position: absolute;
+        left: 80px;
+        top: 2px;
+    }
+
+    .footer__master .footer__enlaces .footer__instagram img {
+        position: absolute;
+        left: 50px;
+    }
+}
+
+
 @media only screen and (max-width: 1200px){
     .bannerButtons__master :nth-child(4) {
         display: none;
     }
+
+    .nosotros__master{
+        display: block;
+    }
+
+    .section__description{
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .nosotros__formulario{
+        margin-top: 100px;
+    }
+
+    .nosotros__form{
+        width: auto;
+    }
+
+    
 }
 
+
+
+
 @media only screen and (max-width: 950px){
+
+
     .bannerButtons__master{ 
         margin-top: 100px;
     
@@ -1223,7 +1274,24 @@ letter-spacing: -0.64px;
     .inmuebles__button{
         width: 98%;
     }
+
+    .footer__master .footer__services-first {
+        display: block;
+    }
+
+    .footer__master .footer__services-item {
+        width: 100%;
+    }
+
+    .footer__master .footer__services-item img {
+        height: 130px;
+    }
+
+    
 }
+
+
+
 
 @media only screen and (max-width: 800px){
 
@@ -1273,7 +1341,7 @@ letter-spacing: -0.64px;
 
 
     .section__master{
-        margin-top: 100px;
+        margin-top: 160px;
 
         h2{
             font-size: 48px;
@@ -1281,6 +1349,29 @@ letter-spacing: -0.64px;
 
         
     }
+
+    .faq__item h3 {
+        font-size: 20px;
+    }
+
+    .faq_btn{
+        position: inherit;
+        display: block;
+
+        p{
+            margin-bottom: 10px;
+        }
+    }
+
+    .reloj__master {
+        display: block;
+
+        p, h4{
+            text-align: center;
+        }
+    }
+
+    
 
     
 }
@@ -1300,6 +1391,35 @@ letter-spacing: -0.64px;
         line-height: 40pt;
     }
 
+    .footer__master .footer__interior {
+        display: block;
+    }
+    
+    .footer__master .footer__services-first {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footer__master .footer__services-item img {
+        object-fit: cover;
+        border-radius: 15px;
+        height: 130px;
+        width: 100%;
+    }
+
+    .footer__master .footer__services {
+        width: 100%;
+    }
+
+    .footer__master .footer__v-line {
+        display: none;
+    }
+
+    .footer__master .footer__time {
+        width: 100%;
+        margin: 60px 0 0 0;
+    }
    
 }
 
@@ -1308,6 +1428,21 @@ letter-spacing: -0.64px;
 
     .place-name-icon{
         display: none;
+    }
+    .nosotros__buttons{
+        display: block;
+        
+        .master_button:nth-child(1) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .nosotros__form-aviso{
+        position: inherit;
+    }
+
+    .footer__master .footer__services-first {
+        display: block;
     }
 
    
