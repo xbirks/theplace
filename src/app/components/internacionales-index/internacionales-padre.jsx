@@ -60,7 +60,7 @@ function InternacionalesPadre() {
     return (
         <>
             <Section
-            title={<span>Servicios <span className="section__description-hightlight">internacionales</span></span>}
+            title={<span id="internacional">Servicios <span className="section__description-hightlight">internacionales</span></span>}
             description={<span>Ofrecemos servicios internacionales a todas aquellas personas interesadas en conseguir lo que buscan en Valencia de la mano de un profesional local con experiencia en el sector.
             <br></br> <br></br>
             Para escoger nuestros servicios internacionales debes contactarnos antes de tu llegada a Valencia y completar el formulario que aparece al final de la página para brindarnos más detalles de tu búsqueda.</span>}

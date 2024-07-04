@@ -6,7 +6,8 @@ import BannerButtons from './buttons/banner-buttons';
 import Reloj from './reloj';
 import Image from 'next/image';
 import Link from 'next/link';
-import InstagramIcon from '../assets/icon/instagram.svg'
+import InstagramIcon from '../assets/icon/instagram.svg';
+import InterBg from '../assets/img/internacional-bg.jpg';
 
 
 function Footer() {
@@ -19,14 +20,18 @@ function Footer() {
             <div className="footer__interior">
                 <div className="footer__services">
                     <div className="footer__services-first">
-                        <div className="footer__services-item">
-                            <Image src="https://entreprendas.es/wp-content/themes/EntrePrendas23/img/vestidos_01.jpg" width="300" height="200"></Image>
-                            <h4>Servicios internacionales</h4>
-                        </div>
-                        <div className="footer__services-item">
-                            <Image src="https://entreprendas.es/wp-content/themes/EntrePrendas23/img/vestidos_01.jpg" width="300" height="200"></Image>
-                            <h4>Gestión de inmuebles</h4>
-                        </div>
+                        <Link href="#internacional">
+                            <div className="footer__services-item">
+                                <Image src={InterBg} width="300" height="200"></Image>
+                                <h4>Servicios internacionales</h4>
+                            </div>
+                        </Link>
+                        <Link href="#inmuebles">
+                            <div className="footer__services-item">
+                                <Image src="https://www.apartup.com/alquiler-larga-estancia/fotos/2/1645724983a00c8600d3e42bb93ab8b7d5de19e260/huge1645725010d52c3fae40030638b061d82596bab441.jpg" width="300" height="200"></Image>
+                                <h4>Gestión de inmuebles</h4>
+                            </div>
+                        </Link>
                     </div>
                     <button className="footer__services-button">
                         <p>Ponte en contacto</p>
