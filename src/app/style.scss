@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -190,6 +194,7 @@ a{
 
 button {
     all: unset; 
+    
 }
 
 .master_button{
@@ -204,6 +209,7 @@ button {
     border-radius: 10px;
     transition: $transition-short;
     padding: 8px 8px;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.20));
     p {
         font-weight: 400;
         font-family: $neue;
@@ -406,6 +412,7 @@ letter-spacing: -0.64px;
     margin-top: 115px;
     display: flex;
     align-items: center;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.20));
 }
 
 .intro__banner h3{
@@ -427,6 +434,10 @@ letter-spacing: -0.64px;
     width: auto;
     margin-top: 35px;
     gap: 35px;
+
+    .intro__item{
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.30));
+    }
 }
 
 .introItem__container{
@@ -507,17 +518,19 @@ letter-spacing: -0.64px;
 
 .inmuebles__master{
     display: flex;
+    margin-bottom: 80px;
 }
 
 .inmuebles__datos{
     padding: 12px 26px 0px 26px;
     position: relative;
-    height: 500px;
+    height: auto;
 }
 
 .inmuebles__image{
     width: 800px;
-    height: 600px;
+    height: auto;
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.20));
 }
 
 .inmuebles__image img{
@@ -525,6 +538,16 @@ letter-spacing: -0.64px;
     width: 100%;
     max-width: auto;
     border-radius: 15px;
+}
+
+.inmuebles__datos{
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        grid-row-gap: 10px;
+        grid-column-gap: 40px;
+    }
 }
 
 .inmuebles__datos-titulo{
@@ -559,6 +582,7 @@ letter-spacing: -0.64px;
     line-height: 124%;
     letter-spacing: -0.32px;
     margin-bottom: 12px;
+    width: 140px;
 }
 
 .inmuebles__padre{
@@ -599,8 +623,17 @@ letter-spacing: -0.64px;
 
 
 .inmuebles__button{
-    position: absolute;
+    position: inherit;
     bottom: 15px;
+    margin-top: 60px;
+}
+
+.arrow-normal{
+    display: block;
+}
+
+.arrow-white{
+    display: none;
 }
 
 
@@ -641,6 +674,7 @@ letter-spacing: -0.64px;
     height: 260px;
     padding: 20px;
     position: relative;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.20));
 }
 
 .interItem__img{
@@ -924,18 +958,20 @@ letter-spacing: -0.64px;
     
     .faq__item-btn-icon {
         border-radius: 10px;
-        background: $marine-place;
+        background: #00555D;
         position: absolute;
         top: 0;
         right: 0;
         margin-top: 8px;
         margin-right: 10px;
         width: 10px;
+        height: 13px;
         text-align: center;
         padding: 14px;
         border: none;
         cursor: pointer;
-        color: $white-place;
+        padding-top: 11px;
+        color: #FFFFFF;
         span {
             color: $white-place;
             padding: 8px 14px;
@@ -1077,12 +1113,15 @@ letter-spacing: -0.64px;
         display: flex;
         justify-content: space-between;
         gap: 20px;
+
+        a{
+            width: 100%;
+        }
     }
     
     .footer__services-item{
         border-radius: 15px;
         position: relative;
-        width: 50%;
        
     
         img{
@@ -1229,6 +1268,15 @@ letter-spacing: -0.64px;
         width: auto;
     }
 
+    .interes__master-item {
+    
+        &:hover {
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+
     
 }
 
@@ -1237,6 +1285,9 @@ letter-spacing: -0.64px;
 
 @media only screen and (max-width: 950px){
 
+    .master__place {
+        width: 85%;
+    }
 
     .bannerButtons__master{ 
         margin-top: 100px;
@@ -1265,7 +1316,7 @@ letter-spacing: -0.64px;
 
         ul{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+            grid-template-columns: repeat(auto-fit, minmax(140px, 200px));
             justify-content: space-around;
             gap: 10px;
         }
@@ -1287,6 +1338,29 @@ letter-spacing: -0.64px;
         height: 130px;
     }
 
+    .inmuebles__right-arrow {
+        right: 10px;
+    }
+
+    .inmuebles__left-arrow {
+        left: 10px;
+    }
+
+    .arrow-normal{
+        display: none;
+    }
+
+    .arrow-white{
+        display: block;
+    }
+
+
+    .footer__master .footer__services-first {
+
+        .footer__services-item{
+            margin-bottom: 20px;
+        }
+    }
     
 }
 
@@ -1308,11 +1382,12 @@ letter-spacing: -0.64px;
         margin-top: 7vh;
 
         .intro__banner{
-            height: 50px;
+            height: 38px;
             border-radius: 10px;
+            
 
              h3{
-                font-size: 24px;
+                font-size: 20px;
                 text-align: center;
 
         }}
@@ -1351,16 +1426,19 @@ letter-spacing: -0.64px;
     }
 
     .faq__item h3 {
-        font-size: 20px;
+        font-size: 19px;
+        line-height: 24px;
+        width: 80%;
     }
 
     .faq_btn{
         position: inherit;
         display: block;
 
-        p{
-            margin-bottom: 10px;
+        .master_button{
+            margin-top: 10px;
         }
+       
     }
 
     .reloj__master {
@@ -1377,6 +1455,10 @@ letter-spacing: -0.64px;
 }
 
 @media only screen and (max-width: 600px){
+
+    .master__place {
+        width: 90%;
+    }
 
     .intro__items{
         display: block;
@@ -1443,6 +1525,22 @@ letter-spacing: -0.64px;
 
     .footer__master .footer__services-first {
         display: block;
+
+        .footer__services-item{
+            margin-bottom: 20px;
+        }
+    }
+
+    .inmuebles__datos ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 100%));
+        justify-content:left;
+    }
+
+   
+
+    .inmuebles__datos ul li{
+        width: 100%;
     }
 
    

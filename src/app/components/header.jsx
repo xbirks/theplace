@@ -20,7 +20,7 @@ const ArrowMenu = () => (
   </svg>
 );
 
-const MenuButton = ({ buttonName, buttonEnlace }) => (
+const MenuButton = ({ buttonName, buttonEnlace, }) => (
   <div className="menu__slider-button">
     <Link href={buttonEnlace}>
       <div className="menu__button">
@@ -34,11 +34,10 @@ const MenuButton = ({ buttonName, buttonEnlace }) => (
 const MenuSlider = ({ menuOpen }) => (
   <div className={`menu__slider ${menuOpen ? 'mostrar' : ''}`}>
     <div className="menu__slider-container">
-      <MenuButton buttonName="Proyectos" buttonEnlace="#" />
-      <MenuButton buttonName="Servicios" buttonEnlace="#" />
-      <MenuButton buttonName="Equipo" buttonEnlace="#" />
-      <MenuButton buttonName="Contacto" buttonEnlace="#" />
-      <MenuButton buttonName="Idioma" buttonEnlace="#" />
+      <MenuButton buttonName="Servicios internacionales" buttonEnlace="https://theplace.vercel.app/#internacional" />
+      <MenuButton buttonName="Gestión de inmuebles" buttonEnlace="https://theplace.vercel.app/#inmuebles" />
+      <MenuButton buttonName="Nosotros" buttonEnlace="#" />
+      <MenuButton buttonName="FAQ" buttonEnlace="#" />
       
     </div>
   </div>
