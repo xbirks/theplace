@@ -52,7 +52,8 @@ table {
 
 /* VARIABLES */
 
-$bird-yellow: #FFD95D;
+// $bird-yellow: #FFD95D;
+$bird-yellow: #ffd448;
 $pee-yellow: #FFF5C1;
 $black-place: #323232;
 $marine-place: #00555D;
@@ -453,7 +454,7 @@ letter-spacing: -0.64px;
     transition: $transition-short;
 
     &:hover {
-        transform: scale(0.97);
+        transform: scale(1.03);
         transition: $transition-short;
     }
 }
