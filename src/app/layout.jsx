@@ -46,6 +46,7 @@ export const metadata = {
   //APPLE
   appleTouchIcon: 'https://tu-pagina-web.com/icono-touch.png', 
   appleTouchStartupImage: 'https://tu-pagina-web.com/startup-image.png',
+  <meta name="theme-color" content="#D21C3F">
 
 
   //SECURITY
@@ -66,6 +67,8 @@ export default function RootLayout({ children }) {
 
       <head>
       <link rel="stylesheet" href="https://use.typekit.net/jei6cdb.css"></link>
+      <meta name="theme-color" content="#F5CA3D"></meta>
+      <meta name="background-color" content="#D21C3F"></meta>
       </head>
     
   
