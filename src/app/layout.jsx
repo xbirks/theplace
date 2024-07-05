@@ -46,7 +46,6 @@ export const metadata = {
   //APPLE
   appleTouchIcon: 'https://tu-pagina-web.com/icono-touch.png', 
   appleTouchStartupImage: 'https://tu-pagina-web.com/startup-image.png',
-  <meta name="theme-color" content="#D21C3F">
 
 
   //SECURITY
