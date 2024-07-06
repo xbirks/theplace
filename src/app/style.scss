@@ -53,7 +53,7 @@ table {
 /* VARIABLES */
 
 // $bird-yellow: #FFD95D;
-$bird-yellow: #F5CA3D;
+$bird-yellow: #ffd448;
 $pee-yellow: #FFF5C1;
 $black-place: #323232;
 $marine-place: #00555D;
@@ -269,7 +269,7 @@ button {
 }
 
 .button__whatsapp{
-    background: #0FCB5A;
+    background: #21b55c;
     width: 210px;
 
     &:hover{
@@ -332,9 +332,6 @@ button {
     fill: red;
     z-index: 101;
 
-    svg, img{
-        fill: red;
-    }
 }
 
 .menu-nav{
@@ -720,6 +717,7 @@ letter-spacing: -0.64px;
     letter-spacing: -0.32px;
     position: absolute;
     bottom: 30px;
+    width: 85%;
 }
 
 .bold_p{
@@ -1131,6 +1129,10 @@ letter-spacing: -0.64px;
         border-radius: 15px;
         position: relative;
        
+        &:hover{
+            transition: $transition-short;
+            transform: scale(1.02);
+        }
     
         img{
             object-fit: cover;
@@ -1285,6 +1287,19 @@ letter-spacing: -0.64px;
         }
     }
 
+    .footer__master .footer__services-first {
+
+        .footer__services-item{
+            margin-bottom: 20px;
+        }
+    }
+
+    .introItem__container{
+        &:hover {
+            transform: scale(1);
+        }
+    }
+
     
 }
 
@@ -1363,12 +1378,7 @@ letter-spacing: -0.64px;
     }
 
 
-    .footer__master .footer__services-first {
-
-        .footer__services-item{
-            margin-bottom: 20px;
-        }
-    }
+    
     
 }
 
@@ -1378,8 +1388,8 @@ letter-spacing: -0.64px;
 @media only screen and (max-width: 800px){
 
     .header__master{
-        padding-top: 30px;
-        padding-bottom: 10px;
+        padding-top: 17px;
+        padding-bottom: 7px;
     }
 
     h1{
@@ -1388,7 +1398,7 @@ letter-spacing: -0.64px;
     }
 
     .intro__master{
-        margin-top: calc(150px + 6vh);
+        margin-top: calc(100px + 6vh);
 
         .intro__banner{
             height: 38px;
@@ -1468,6 +1478,25 @@ letter-spacing: -0.64px;
         }
     }
 
+
+    .place-name-icon img{
+        height: 40px;
+    }
+    
+    .place-name-logo img{
+        height: 35px;
+    
+    }
+    
+    .hamburger{
+        height:20px;
+    }
+
+
+    .interItem__master {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
     
 
     
@@ -1531,6 +1560,10 @@ letter-spacing: -0.64px;
 
         
     }
+
+    .interItem{
+        height: 240px;
+    }
    
 }
 
@@ -1542,7 +1575,7 @@ letter-spacing: -0.64px;
     }
 
     .place-name-logo{
-        margin-left: 30px;
+        margin-left: 10px;
     }
     .nosotros__buttons{
         display: block;
@@ -1581,7 +1614,7 @@ letter-spacing: -0.64px;
 }
 
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 280px){
 
     .place-name-icon{
         display: block;
