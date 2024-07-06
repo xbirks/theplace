@@ -20,8 +20,8 @@ const ArrowMenu = () => (
   </svg>
 );
 
-const MenuButton = ({ buttonName, buttonEnlace, }) => (
-  <div className="menu__slider-button">
+const MenuButton = ({ buttonName, buttonEnlace, onClick }) => (
+  <div className="menu__slider-button" onClick={onClick}>
     <Link href={buttonEnlace}>
       <div className="menu__button">
         <p>{buttonName}</p>
@@ -31,14 +31,13 @@ const MenuButton = ({ buttonName, buttonEnlace, }) => (
   </div>
 );
 
-const MenuSlider = ({ menuOpen }) => (
+const MenuSlider = ({ menuOpen, closeMenu }) => (
   <div className={`menu__slider ${menuOpen ? 'mostrar' : ''}`}>
     <div className="menu__slider-container">
-      <MenuButton buttonName="Servicios internacionales" buttonEnlace="https://theplace.vercel.app/#internacional" />
-      <MenuButton buttonName="Gestión de inmuebles" buttonEnlace="https://theplace.vercel.app/#inmuebles" />
-      <MenuButton buttonName="Nosotros" buttonEnlace="#" />
-      <MenuButton buttonName="FAQ" buttonEnlace="#" />
-      
+      <MenuButton buttonName="Servicios internacionales" buttonEnlace="#internacional" onClick={closeMenu} />
+      <MenuButton buttonName="Gestión de inmuebles" buttonEnlace="#inmuebles" onClick={closeMenu} />
+      <MenuButton buttonName="Nosotros" buttonEnlace="#" onClick={closeMenu} />
+      <MenuButton buttonName="FAQ" buttonEnlace="#" onClick={closeMenu} />
     </div>
   </div>
 );
@@ -51,27 +50,28 @@ const Header = () => {
     document.body.classList.toggle('no-scroll', !menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+    document.body.classList.remove('no-scroll');
+  };
+
   return (
     <div className="header__master">
       <Link href="/" className="place-name-icon">
-      
-          <Image src={PlaceIcon} alt="Logo ERMO" width={40} height={46} />
-        
+        <Image src={PlaceIcon} alt="Logo ERMO" width={40} height={46} />
       </Link>
 
       <Link href="/" aria-label="Inicio" className="place-name-logo">
-      
-          <Image src={PlaceName} alt="Logo ERMO" width={202} height={46} />
-        
+        <Image src={PlaceName} alt="Logo ERMO" width={202} height={46} />
       </Link>
 
-      
       <button className="menu-nav" aria-label="Menú navegación" onClick={toggleMenu}>
-        <HamburgerIcon />
+        <HamburgerIcon menuOpen={menuOpen} />
       </button>
-      <MenuSlider menuOpen={menuOpen} />
+      <MenuSlider menuOpen={menuOpen} closeMenu={closeMenu} />
     </div>
   );
 };
 
 export default Header;
+
