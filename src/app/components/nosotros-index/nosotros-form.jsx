@@ -97,17 +97,7 @@ const NosotrosForm = () => {
                         required
                     />
                 </div>
-                <div>
-                    <label htmlFor="message">Mensaje</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Escribe tu mensaje"
-                        value={formData.message}
-                        onChange={handleChange}
-                        required
-                    ></textarea>
-                </div>
+                
                 <p className="nosotros__form-aviso">
                     Al hacer clic en ENVIAR estás aceptando la política de privacidad.
                 </p>
