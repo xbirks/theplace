@@ -1,3 +1,5 @@
+// route.js
+
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
@@ -6,9 +8,16 @@ export async function POST(request) {
         const { subject, message } = await request.json();
 
         const transporter = nodemailer.createTransport({
+
             host: process.env.SMTP_HOST,
             port: parseInt(process.env.SMTP_PORT),
             secure: process.env.SMTP_SECURE === 'true',
+
+            service: 'hostinger',
+            host: process.env.SMTP_HOST,
+            port: process.env.SMTP_PORT,
+            secure: process.env.SMTP_SECURE === 'true', // Asegúrate de convertir a booleano
+
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASS
