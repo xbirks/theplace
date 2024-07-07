@@ -25,7 +25,7 @@ const datosInmuebles = [
         'Ascensor',
         'Lavadora',
         'Secadora',],
-        boton: 'Ver en AirBnB',
+        boton: 'Ver en Airbnb',
         link: 'https://www.airbnb.es/rooms/810254726997200920?viralityEntryPoint=1&unique_share_id=6B662A9F-207B-4E31-8C96-4573EAA60210&slcid=544585e07fd04e3492e36d10ff2d728b&s=76&feature=share&adults=1&channel=native&slug=AG72bYxC&source_impression_id=p3_1719665788_P3SpCkZY0yKRDemp',
     },
     {
@@ -35,7 +35,7 @@ const datosInmuebles = [
         descripcion: 'El apartamento dispone de una zona de lavandería con lavadora y secadora, para que puedas tener tu ropa limpia y seca rápidamente. Además, la cocina está equipada con todo lo necesario para que disfrutes de tu estancia, incluido lavavajillas. Hay conexión wifi y Smart TV.',
         caracteristicas: ['Piscina', 'Acceso a internet', 'Aire acondicionado', 'Jardín'],
         boton: 'Ver en ApartUP',
-        link: 'https://www.apartup.com/alquiler-larga-estancia/casa-pobla-de-vallbona-carrasqueta-deluxe-381073.html',
+        link: 'https://www.airbnb.es/rooms/44134906?viralityEntryPoint=1&unique_share_id=00DC64BD-F83C-47FA-9F14-19951CA89278&slcid=b228000452164a7683c36b3cc03684b7&s=76&feature=share&adults=1&channel=native&slug=b4EcRa95&source_impression_id=p3_1720377406_P31ntwIDyTxE94cL',
     },
     {
         src: PisoCentro,
@@ -43,7 +43,7 @@ const datosInmuebles = [
         titulo: 'Piso en Valencia',
         descripcion: 'El apartamento dispone de una zona de lavandería con lavadora y secadora, para que puedas tener tu ropa limpia y seca rápidamente. Además, la cocina está equipada con todo lo necesario para que disfrutes de tu estancia, incluido lavavajillas. Hay conexión wifi y Smart TV.',
         caracteristicas:['Cocina', 'Wifi', 'Zona para trabajar', 'Vistas al perfil urbano', 'Acceso a la playa',],
-        boton: 'Ver en ApartUP',
+        boton: 'Ver en Airbnb',
         link: 'https://www.apartup.com/alquiler-larga-estancia/casa-pobla-de-vallbona-carrasqueta-deluxe-381073.html',
     },
     

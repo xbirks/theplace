@@ -1,3 +1,4 @@
+// nosotrosForm.jsx
 import React, { useState } from 'react';
 
 const NosotrosForm = () => {
@@ -6,12 +7,22 @@ const NosotrosForm = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
+        // Limitar el campo de teléfono solo a números
+        if (name === 'tel') {
+            if (!/^\d*$/.test(value)) return; // Permitir solo números
+        }
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus(''); // Reset status
+
+        if (formData.tel.length !== 9) {
+            setStatus('error');
+            alert('El número de teléfono debe tener exactamente 9 dígitos.');
+            return;
+        }
 
         try {
             const response = await fetch('/api/sendEmail', {
@@ -25,6 +36,7 @@ const NosotrosForm = () => {
                         <p>Nombre: ${formData.name}</p>
                         <p>Email: ${formData.email}</p>
                         <p>Teléfono: ${formData.tel}</p>
+                        <p>Mensaje: ${formData.message}</p>
                     `,
                 }),
             });
@@ -81,10 +93,21 @@ const NosotrosForm = () => {
                         inputMode="numeric"
                         value={formData.tel}
                         onChange={handleChange}
+                        pattern="\d{9}" // Exactamente 9 dígitos
                         required
                     />
                 </div>
-               
+                <div>
+                    <label htmlFor="message">Mensaje</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Escribe tu mensaje"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                    ></textarea>
+                </div>
                 <p className="nosotros__form-aviso">
                     Al hacer clic en ENVIAR estás aceptando la política de privacidad.
                 </p>
