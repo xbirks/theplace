@@ -52,7 +52,6 @@ table {
 
 /* VARIABLES */
 
-
 $bird-yellow: #FFCA22;
 $pee-yellow: #FFF5C1;
 $black-place: #323232;
@@ -373,7 +372,7 @@ button {
     .menu__button{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     svg{
@@ -382,12 +381,13 @@ button {
 
     p{
         color: $white-place;
-font-family: $neue;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: 110%; /* 35.2px */
-letter-spacing: -0.64px;
+        font-family: $neue;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%; /* 35.2px */
+        letter-spacing: -0.64px;
+        width: 80%;
     }
 }
 
