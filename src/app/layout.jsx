@@ -30,7 +30,7 @@ export const metadata = {
     description: '10 años ayudando a gestionar tu patrimonio inmobiliario. Ofrecemos servicios personalizados para explorar oportunidades del mercado.',
     url: 'https://www.placevlc.com',
     type: 'website',
-    image: 'https://tu-pagina-web.com/imagen-og.jpg',
+    image: 'https://theplace.vercel.app/seo/meta-1200x630.jpg',
     site_name: 'THE PLACE | Gestión inmobiliaria y servicios internacionales',
     locale: 'es_ES',
   },
@@ -42,19 +42,15 @@ export const metadata = {
     creator: '@placevlc',
     title: 'ERMO | Estudio de diseño gráfico',
     description: '10 años ayudando a gestionar tu patrimonio inmobiliario. Ofrecemos servicios personalizados para explorar oportunidades del mercado.',
-    image: 'https://tu-pagina-web.com/imagen-twitter.jpg',
+    image: 'https://theplace.vercel.app/seo/twitter-1200-600.jpg',
     imageAlt: 'Descripción de la imagen para Twitter',
   },
 
   //APPLE
-  appleTouchIcon: 'https://tu-pagina-web.com/icono-touch.png', 
+  appleTouchIcon: 'https://theplace.vercel.app/seo/180x180_apple_touch_icon.png', 
   appleTouchStartupImage: 'https://tu-pagina-web.com/startup-image.png',
 
-  // ICONS
-  icons: {
-    icon: 'https://tu-pagina-web.com/favicon.ico',  // Añadido
-    shortcut: 'https://tu-pagina-web.com/favicon-16x16.png',  // Añadido
-  },
+  
 
 
 
