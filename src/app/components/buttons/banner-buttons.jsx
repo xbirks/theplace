@@ -11,33 +11,28 @@ function BannerButtons() {
    <div className="bannerButtons__master">
         <StandardButton
             title="Buscar viviendas"
-            link="#"
+            link="https://wa.me/message/B5ZHFOXXINNKP1"
             style="bannerButtons__mod"
         />
 
         <StandardButton
             title="Traslados"
-            link="#"
+            link="https://wa.me/message/B5ZHFOXXINNKP1"
             style="bannerButtons__mod"
         />
 
         <StandardButton
             title="Seguros"
-            link="#"
+            link="https://wa.me/message/B5ZHFOXXINNKP1"
             style="bannerButtons__mod"
         />
 
         <StandardButton
             title="Asesoramiento legal"
-            link="#"
+            link="https://wa.me/message/B5ZHFOXXINNKP1"
             style="bannerButtons__mod"
         />
 
-        <StandardButton
-            title="Instagram"
-            link="#"
-            style="bannerButtons__instagram"
-        />
   </div>
 
 );

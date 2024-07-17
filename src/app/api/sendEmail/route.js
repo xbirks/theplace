@@ -26,7 +26,7 @@ export async function POST(request) {
 
         const mailOptions = {
             from: process.env.SMTP_USER,
-            to: 'andres03ortega@gmail.com',
+            to: 'andres03ortega@gmail.com, aom.contacto@gmail.com',
             subject: subject || 'Envio de prueba',
             html: message,
         };
