@@ -33,21 +33,26 @@ function Footer() {
                             </div>
                         </Link>
                     </div>
-                    <button className="footer__services-button">
-                        <p>Ponte en contacto</p>
-                    </button>
+
+                    <StandardButton
+                    link="https://google.es"
+                    title="Ponte en contacto"
+                    style="footer__services-button"
+                    />
+
                 </div>
                 <div className="footer__v-line"></div>
                 <div className="footer__time">
                     <Reloj />
                     <div className="footer__h-line"></div>
                     <div className="footer__enlaces">
-                        <div className="footer__instagram"><Image src={InstagramIcon}></Image><Link href="soyandres.es"> Instagram</Link></div>
-                        <Link href="soyandres.es" className="footer__child-1">hola@theplace.com</Link>
-                        <Link href="soyandres.es">961 123 456</Link>
+                        <div className="footer__instagram"><Image src={InstagramIcon}></Image><Link href="https://www.instagram.com/theplacevlc/"> Instagram</Link></div>
+                        <Link href="mailto:neus@placevlc.com" className="footer__child-1">neus@placevlc.com</Link>
+                        <Link href="mailto:hugo@placevlc.com">hugo@placevlc.com</Link>
                         <Link href="soyandres.es">Política de privacidad</Link>
                         <Link href="soyandres.es">Política de cookies</Link>
                         <Link href="soyandres.es">Aviso legal</Link>
+                        <Link href="tel:+34604975558">604 975 558</Link>
                     </div>
                 </div>
             </div>

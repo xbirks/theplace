@@ -36,8 +36,8 @@ const MenuSlider = ({ menuOpen, closeMenu }) => (
     <div className="menu__slider-container">
       <MenuButton buttonName="Servicios internacionales" buttonEnlace="#internacional" onClick={closeMenu} />
       <MenuButton buttonName="Gestión de inmuebles" buttonEnlace="#inmuebles" onClick={closeMenu} />
-      <MenuButton buttonName="Nosotros" buttonEnlace="#" onClick={closeMenu} />
-      <MenuButton buttonName="FAQ" buttonEnlace="#" onClick={closeMenu} />
+      <MenuButton buttonName="Nosotros" buttonEnlace="#nosotros" onClick={closeMenu} />
+      <MenuButton buttonName="FAQ" buttonEnlace="#faq" onClick={closeMenu} />
     </div>
   </div>
 );

@@ -9,7 +9,7 @@ import StandardButton from "../buttons/standard-button";
 function NosotrosPadre(){
 
     return(
-        <div className="nosotros__master">
+        <div className="nosotros__master" id="nosotros">
             <div className="nosotros__descripcion">
                 <Section
                 title={<span>Estos somos <span className="section__description-hightlight">nosotros</span></span>}
@@ -19,12 +19,12 @@ function NosotrosPadre(){
                 />
                 <div className="nosotros__buttons">
                     <StandardButton
-                    link="soyandres.es"
+                    link="https://wa.me/message/B5ZHFOXXINNKP1"
                     title="Mándanos un WhatsApp"
                     style="button__whatsapp"
                     />
                     <StandardButton
-                    link="soyandres.es"
+                    link="tel:+34604975558"
                     title="Llámanos"
                     style=""
                     />

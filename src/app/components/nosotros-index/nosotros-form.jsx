@@ -36,7 +36,6 @@ const NosotrosForm = () => {
                         <p>Nombre: ${formData.name}</p>
                         <p>Email: ${formData.email}</p>
                         <p>Teléfono: ${formData.tel}</p>
-                        <p>Mensaje: ${formData.message}</p>
                     `,
                 }),
             });
@@ -44,7 +43,7 @@ const NosotrosForm = () => {
             const data = await response.json();
             if (response.ok) {
                 setStatus('success');
-                setFormData({ name: '', email: '', tel: '', message: '' }); // Clear form
+                setFormData({ name: '', email: '', tel: '' }); // Clear form
             } else {
                 setStatus('error');
             }
@@ -105,8 +104,8 @@ const NosotrosForm = () => {
                     Enviar
                 </button>
             </form>
-            {status === 'success' && <p className="success-message">¡Formulario enviado con éxito!</p>}
-            {status === 'error' && <p className="error-message">Hubo un error al enviar el formulario. Inténtalo de nuevo.</p>}
+            {status === 'success' && <p className="success-message">¡Qué bien! Hemos recibido tu mensaje</p>}
+            {status === 'error' && <p className="error-message">¡Oh no! Algo ha fallado. Contáctanos por teléfono al 604 975 558</p>}
         </div>
     );
 };
