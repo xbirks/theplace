@@ -34,10 +34,10 @@ const MenuButton = ({ buttonName, buttonEnlace, onClick }) => (
 const MenuSlider = ({ menuOpen, closeMenu }) => (
   <div className={`menu__slider ${menuOpen ? 'mostrar' : ''}`}>
     <div className="menu__slider-container">
-      <MenuButton buttonName="Servicios internacionales" buttonEnlace="#internacional" onClick={closeMenu} />
-      <MenuButton buttonName="Gestión de inmuebles" buttonEnlace="#inmuebles" onClick={closeMenu} />
-      <MenuButton buttonName="Nosotros" buttonEnlace="#nosotros" onClick={closeMenu} />
-      <MenuButton buttonName="FAQ" buttonEnlace="#faq" onClick={closeMenu} />
+      <MenuButton buttonName="Servicios internacionales" buttonEnlace="https://www.placevlc.com/#internacional" onClick={closeMenu} />
+      <MenuButton buttonName="Gestión de inmuebles" buttonEnlace="https://www.placevlc.com/#inmuebles" onClick={closeMenu} />
+      <MenuButton buttonName="Nosotros" buttonEnlace="https://www.placevlc.com/#nosotros" onClick={closeMenu} />
+      <MenuButton buttonName="FAQ" buttonEnlace="https://www.placevlc.com/#faq" onClick={closeMenu} />
     </div>
   </div>
 );
