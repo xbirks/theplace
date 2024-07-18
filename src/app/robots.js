@@ -6,6 +6,6 @@ export default function robots() {
           allow: ['/'],
         },
       ],
-      sitemap: 'https://ermo.es/sitemap.xml',
+      sitemap: 'https://placevlc.com/sitemap.xml',
     }
   }

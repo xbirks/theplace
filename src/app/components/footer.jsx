@@ -49,9 +49,8 @@ function Footer() {
                         <div className="footer__instagram"><Image src={InstagramIcon}></Image><Link href="https://www.instagram.com/theplacevlc/"> Instagram</Link></div>
                         <Link href="mailto:neus@placevlc.com" className="footer__child-1">neus@placevlc.com</Link>
                         <Link href="mailto:hugo@placevlc.com">hugo@placevlc.com</Link>
-                        <Link href="soyandres.es">Política de privacidad</Link>
-                        <Link href="soyandres.es">Política de cookies</Link>
-                        <Link href="soyandres.es">Aviso legal</Link>
+                        <Link href="../pages/privacidad">Política de privacidad</Link>
+                        <Link href="../pages/legal">Aviso legal</Link>
                         <Link href="tel:+34604975558">604 975 558</Link>
                     </div>
                 </div>

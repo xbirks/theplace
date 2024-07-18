@@ -16,14 +16,14 @@ function Intro() {
             <div className="intro__items">
                 <IntroItem
                     imgSrc={InterBg}
-                    alt=""
+                    alt="Casa unifamiliar moderna cerca de Valencia en alquiler por Placevlc"
                     title="Servicios internacionales"
                     enlace="#internacional"
                 />
 
                 <IntroItem
                     imgSrc="https://www.apartup.com/alquiler-larga-estancia/fotos/2/1645724983a00c8600d3e42bb93ab8b7d5de19e260/huge1645725010d52c3fae40030638b061d82596bab441.jpg"
-                    alt=""
+                    alt="Domicilio moderno en zona de lujo cerca de Valencia alquilado por Placevlc"
                     title="Gestión de inmuebles"
                     enlace="#inmuebles"
                 />

@@ -1229,6 +1229,44 @@ button {
 
 
 
+
+
+
+
+//LEGAL PAGE
+
+.legal__master{
+    margin-top: 12vh;
+
+    h1{
+        margin-bottom: 50px;
+    }
+
+    h2{
+        margin-top: 100px;
+        margin-bottom: 30px;
+        font-weight: 500;
+        color: $marine-place;
+        text-transform: uppercase;    }
+
+    span{
+        font-family: $neue;
+        color: $marine-place;
+        font-size: 14pt;
+    }
+}
+
+.legal__bold{
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
 //RESPONSIVE
 
 @media only screen and (max-width: 1257px) {
