@@ -1,7 +1,6 @@
 import "./style.scss";
-import Head from 'next/head';
 import Header from './components/header.jsx';
-import Footer from "./components/footer";
+import Footer from "./components/footer.jsx";
 
 
 export const metadata = {
@@ -43,12 +42,12 @@ export const metadata = {
     title: 'THE PLACE | Gestión inmobiliaria y servicios internacionales',
     description: '10 años ayudando a gestionar tu patrimonio inmobiliario. Ofrecemos servicios personalizados para explorar oportunidades del mercado.',
     image: 'https://placevlc.com/seo/twitter-1200-600.jpg',
-    imageAlt: 'Descripción de la imagen para Twitter',
+    imageAlt: 'Gestión inmobiliaria y servicios internacionales en Valencia',
   },
 
   //APPLE
-  appleTouchIcon: 'https://theplace.vercel.app/seo/180x180_apple_touch_icon.png', 
-  appleTouchStartupImage: 'https://tu-pagina-web.com/startup-image.png',
+  appleTouchIcon: 'https://placevlc.com/seo/180x180_apple_touch_icon.png', 
+  appleTouchStartupImage: 'https://placevlc.com/seo/180x180_apple_touch_icon.png',
 
   
 
