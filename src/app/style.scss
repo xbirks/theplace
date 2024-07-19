@@ -51,14 +51,30 @@ table {
 
 
 /* VARIABLES */
+/*
+// $bird-yellow: #FFCA22;
+// $pee-yellow: #FFF5C1;
+// $black-place: #323232;
+// $marine-place: #00555D;
+// $bright-blue: #00D3B9;
+// $white-place: #FFFFFF;
+// $neue : neue-haas-unica, Arial, Helvetica, sans-serif;
+// $fuente-p: 14pt;
+// $transition-short: 0.3s;  */
 
+
+/* VARIABLES */
+
+$bird-yellow: #383431;
+$pee-yellow: #E7E4DD;
 $bird-yellow: #FFCA22;
 $pee-yellow: #FFF5C1;
 $black-place: #323232;
-$marine-place: #00555D;
+$marine-place: #DB914E;
 $bright-blue: #00D3B9;
 $white-place: #FFFFFF;
 $neue : neue-haas-unica, Arial, Helvetica, sans-serif;
+$human : "Hanuman", Arial, Helvetica, sans-serif;
 $fuente-p: 14pt;
 $transition-short: 0.3s;
 
@@ -118,13 +134,13 @@ $mb-xxl:148px; .mb-xxl{margin-bottom: $mb-xxl;}
 }
 
 h1{
-    font-size: 96px;
-    font-family: $neue;
+    font-size: 86px;
+    font-family: $human;
     color: $marine-place;
     text-align: left;
     font-weight: 400;
     line-height: 110%; 
-    letter-spacing: -1.92px;
+    letter-spacing: -2.92px;
 }
 
 h2{
@@ -205,8 +221,8 @@ button {
     width: 7vw;
     min-width: 140px;
     justify-content: center;
-    background: $bird-yellow;
-    border-radius: 10px;
+    background: $marine-place;
+    border-radius: none;
     transition: $transition-short;
     padding: 8px 8px;
     filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.20));
@@ -218,12 +234,12 @@ button {
         font-weight: 400;
         line-height: 124%;
         letter-spacing: -0.32px;
-        color: $marine-place;
+        color: $white-place;
     }
     &:hover {
-        background-color: $marine-place;
+        background-color: $bird-yellow;
         p {
-            color: $white-place;
+            color: $marine-place;
         }
     }
     &.button-large {
@@ -268,16 +284,16 @@ button {
 }
 
 .button__whatsapp{
-    background: #21b55c;
+    background-color: #31A660;
     width: 210px;
 
     &:hover{
-        background-color: #b9f5d1;
+        background-color: rgb(17, 110, 54);
     }
 } .button__whatsapp p{
     color: $white-place;
     &:hover{
-        color: #0FCB5A;
+        color: #2dc966;
     }
 }
 
@@ -400,19 +416,18 @@ button {
 //INTRO
 
 .intro__master{
-    margin-top: 240px;
+    margin-top: 190px;
 }
 
 
 
 .intro__city{
-    font-style: italic;
     font-weight: 500;
 }
 
 .intro__banner{
     background-color: $bird-yellow;
-    border-radius: 15px;
+    border-radius: none;
     height: 60px;
     margin-top: 115px;
     display: flex;
@@ -423,7 +438,7 @@ button {
 .intro__banner h3{
     font-size: 32px;
     font-family: $neue;
-    color: $marine-place;
+    color: $white-place;
     font-style: normal;
     font-weight: 400;
     line-height: 106%; 
@@ -445,9 +460,9 @@ button {
 
 .introItem__container{
     width: 100%;
-    height: 540px;
+    height: auto;
     position: relative;
-    border-radius: 15px;
+    border-radius: none;
     transition: $transition-short;
 
     &:hover {
@@ -460,7 +475,7 @@ button {
     object-fit: cover;
     width: 100%;
     max-width: auto;
-    border-radius: 15px;
+    border-radius: none;
     filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, .3));
 }
 
@@ -483,13 +498,13 @@ button {
 //SECTION
 
 .section__master{
-    margin-top: 260px;
-    margin-bottom: 100px;
+    margin-top: 160px;
+    margin-bottom: 60px;
 }
 
 .section__title{
-    color: $marine-place;
-    font-family: $neue;
+    color: $bird-yellow;
+    font-family: $human;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -513,7 +528,6 @@ button {
 }
 
 .section__description-hightlight{
-    font-style: italic;
     font-weight: 500;
 }
 
@@ -542,7 +556,7 @@ button {
     object-fit: cover;
     width: 100%;
     max-width: auto;
-    border-radius: 15px;
+    border-radius: none;
 }
 
 .inmuebles__datos{
@@ -556,7 +570,7 @@ button {
 }
 
 .inmuebles__datos-titulo{
-    font-family: $neue;
+    font-family: $human;
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
@@ -601,7 +615,7 @@ button {
     z-index: 10;
     transition: $transition-short;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: none;
     padding: 5px;
     &:hover{
         background-color: $pee-yellow;
@@ -615,7 +629,7 @@ button {
     right: -50px;
     transition: $transition-short;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: none;
     padding: 5px;
     
     &:hover{
@@ -650,9 +664,26 @@ button {
 .bannerButtons__master{
     display: flex;
     justify-content: space-between;
-    background-color: $marine-place;
-    padding: 15px 18px;
-    border-radius: 15px;
+    background-color: none;
+    border-radius: none;
+    gap: 10px;
+
+    .master_button{
+        width: 100%;
+    }
+
+    .button{
+        background-color: $bird-yellow;
+        &:hover{
+            background-color: $marine-place;
+        }
+    }
+
+    .button p{
+        color: $white-place;
+    }
+
+    
 }
 
 .bannerButtons__mod{
@@ -673,7 +704,7 @@ button {
 }
 
 .interItem{
-    border-radius: 15px;
+    border-radius: none;
     background: $bird-yellow;
     width: auto;
     height: 260px;
@@ -683,10 +714,10 @@ button {
 }
 
 .interItem__img{
-    background-color: $marine-place;
+    background-color: none;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: none;
     position: relative;
 }
 
@@ -697,8 +728,8 @@ button {
 }
 
 .interItem h3{
-    color: $marine-place;
-    font-family: $neue;
+    color: $white-place;
+    font-family: $human;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -708,7 +739,7 @@ button {
 }
 
 .interItem p{
-    color: $black-place;
+    color: $marine-place;
     font-family: $neue;
     font-size: 16px;
     font-style: normal;
@@ -745,8 +776,8 @@ button {
 }
 
 .nosotros__formulario h3{
-    color: $marine-place;
-    font-family: $neue;
+    color: $bird-yellow;
+    font-family: $human;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -756,7 +787,7 @@ button {
 
 .nosotros__form{
     background-color: $bird-yellow;
-    border-radius: 15px;
+    border-radius: none;
     padding: 24px;
     width: 400px;
     position: relative;
@@ -770,7 +801,7 @@ button {
     display: block;
     margin-bottom: 9px;
 
-    color: $marine-place;
+    color: $white-place;
     font-family: $neue;
     font-size: 16px;
     font-style: normal;
@@ -780,9 +811,9 @@ button {
 }
 
 .nosotros__form input, .nosotros__form textarea{
-    background-color: $pee-yellow;
+    background-color: #EFEFEF;
     border: none;
-    border-radius: 5px;
+    border-radius: none;
     width: 95%;
     padding: 8px;
     margin-bottom: 16px;
@@ -797,7 +828,7 @@ button {
     letter-spacing: -0.32px;
 
     &::placeholder {
-        color: #D0C89C; 
+        color: #bfbfbf; 
     }
 
     &:hover{
@@ -811,7 +842,7 @@ button {
     right: 0px;
     background-color: $marine-place;
     padding: 14px 22px;
-    border-radius: 10px;
+    border-radius: none;
 
     color: $bird-yellow;
     font-family: $neue;
@@ -833,7 +864,7 @@ button {
     width: 190px;
     bottom: -50px;
 
-    color: $marine-place;
+    color: $bird-yellow;
     font-family: $neue;
     font-size: 13px;
     font-style: italic;
@@ -858,8 +889,8 @@ button {
 }
 
 .interes__master h2{
-    color: $marine-place;
-    font-family: $neue;
+    color: $bird-yellow;
+    font-family: $human;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -881,15 +912,24 @@ button {
 }
 
 .interes__master-item {
-    border-radius: 20px;
+    border-radius: none;
     background: #F5F5F5;
     box-shadow: 3px 3px 9.3px 0px rgba(0, 0, 0, 0.25);
     height: 480px;
 
-    &:hover {
-        h3 {
-            font-size: 25px;
+    
+
+    .button{
+        background-color: $bird-yellow;
+        &:hover{
+            background-color: $marine-place;
+
+            p{
+                color: white;
+            }
         }
+
+
     }
 }
 
@@ -903,7 +943,7 @@ button {
     width: 100%;
     height: 240px;
     object-fit: cover;
-    border-radius: 18px 18px 0px 0px;
+    border-radius: none;
 }
 
 .interes__master-item p{
@@ -917,7 +957,7 @@ button {
 }
 
 .interes__master-item h3{
-    color: $marine-place;
+    color: $bird-yellow;
     font-family: $neue;
     font-size: 24px;
     font-style: normal;
@@ -943,7 +983,7 @@ button {
 }
 
 .faq__master {
-    margin-top: 260px;
+    margin-top: 160px;
 }
 
 .faq__item-btn{
@@ -951,10 +991,10 @@ button {
 }
 
 .faq__item {
-    background-color: $bird-yellow;
+    background-color: $marine-place;
     margin-bottom: 20px;
     position: relative;
-    border-radius: 15px;
+    border-radius: none;
     padding: 12px 20px;
     cursor: pointer;
     transition: $transition-short;
@@ -963,8 +1003,8 @@ button {
     }
     
     .faq__item-btn-icon {
-        border-radius: 10px;
-        background: #00555D;
+        border-radius: none;
+        background: $bird-yellow;
         position: absolute;
         top: 0;
         right: 0;
@@ -984,22 +1024,23 @@ button {
         }
     }
     h3 {
-        color: $marine-place;
-        font-family: $neue;
+        color: $bird-yellow;
+        font-family: $human;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: 110%;
         letter-spacing: -0.64px;
         max-width: 90%;
-        margin-bottom: 8px;
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
     .faq__item-content {
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.3s ease-out;
         p {
-            color: $marine-place;
+            color: $bird-yellow;
             font-family: $neue;
             font-size: 16px;
             font-style: normal;
@@ -1017,10 +1058,9 @@ button {
 }
 
 .faq__master h2 {
-    color: $marine-place;
-    font-family: $neue;
+    color: $bird-yellow;
+    font-family: $human;
     font-size: 64px;
-    font-style: italic;
     font-weight: 500;
     line-height: 110%; 
     letter-spacing: -1.28px;
@@ -1036,7 +1076,7 @@ button {
     margin-top: 14px;
 
     p{
-        color: $marine-place;
+        color: $bird-yellow;
         font-family: $neue;
         font-size: 16px;
         font-style: normal;
@@ -1056,11 +1096,11 @@ button {
 
     .reloj__hora{
         color: $bird-yellow;
-        font-family: $neue;
+        font-family: $human;
         font-size: 64px;
         font-style: normal;
         font-weight: 400;
-        line-height: 110%; 
+        line-height: 124%; 
         letter-spacing: -1.28px;
     }
 
@@ -1097,6 +1137,7 @@ button {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
     
     .footer__v-line{
         width: 1.5px;
@@ -1126,7 +1167,7 @@ button {
     }
     
     .footer__services-item{
-        border-radius: 15px;
+        border-radius: none;
         position: relative;
        
         &:hover{
@@ -1136,7 +1177,7 @@ button {
     
         img{
             object-fit: cover;
-            border-radius: 15px;
+            border-radius: none;
             height: 130px;
             width: 100%;
         }
@@ -1169,7 +1210,7 @@ button {
         display: flex;
         margin-top: 20px;
         padding: 8px 0px 8px 0px;
-        border-radius: 10px;
+        border-radius: none;
         cursor: pointer;
         transition: $transition-short;
     
@@ -1194,13 +1235,17 @@ button {
         margin-left: 4vw;
 
         a{
-            color: $marine-place;
+            color: $bird-yellow;
             font-family: $neue;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 124%; /* 19.84px */
             letter-spacing: -0.32px;
+
+            &:hover{
+                color: $marine-place;
+            }
         }
 
         .footer__instagram{
@@ -1214,6 +1259,11 @@ button {
                 position: absolute;
                 left: 30px;
                 top: 2px;
+                color: $bird-yellow;
+
+                &:hover{
+                    color: $marine-place;
+                }
             }
         }
     }
@@ -1440,7 +1490,7 @@ button {
 
         .intro__banner{
             height: 38px;
-            border-radius: 10px;
+            border-radius: none;
             
 
              h3{
@@ -1571,7 +1621,7 @@ button {
 
     .footer__master .footer__services-item img {
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: none;
         height: 130px;
         width: 100%;
     }

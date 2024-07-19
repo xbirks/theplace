@@ -72,6 +72,9 @@ export default function RootLayout({ children }) {
 
       <head>
       <link rel="stylesheet" href="https://use.typekit.net/jei6cdb.css"></link>
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+      <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap" rel="stylesheet"></link>
       <meta name="theme-color" content="#F5CA3D"></meta>
       <meta name="background-color" content="#D21C3F"></meta>
       </head>
