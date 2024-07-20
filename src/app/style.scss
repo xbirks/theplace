@@ -55,7 +55,7 @@ $bird-yellow: #383431;
 $pee-yellow: #E7E4DD;
 $black-place: #383431;
 $marine-place: #DB914E;
-$bright-blue: #00D3B9;
+$bright-blue: #bc4618;
 $white-place: #FFFFFF;
 $neue : neue-haas-unica, Arial, Helvetica, sans-serif;
 $human : "Hanuman", Arial, Helvetica, sans-serif;
@@ -896,6 +896,7 @@ button {
 }
 
 .interes__master-item {
+    position: relative;
     border-radius: none;
     background: #F5F5F5;
     box-shadow: 3px 3px 9.3px 0px rgba(0, 0, 0, 0.25);
@@ -952,10 +953,10 @@ button {
     transition: $transition-short;
 }
 
-.interes__item-data .master_button{
+.interes__master-item .master_button{
     position: absolute;
-    bottom: -100px;
-    right: 24px;
+    bottom: 25px;
+    right: 25px;
 }
 
 
@@ -1311,6 +1312,11 @@ button {
         height: 230px;
     }
 
+    .footer__master .footer__enlaces {
+        margin-left: 0px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 226px));
+    }
+
     .footer__master .footer__enlaces a {
         text-align: center;
     }
@@ -1407,7 +1413,7 @@ button {
 
     .inmuebles__datos{
         height: auto;
-        padding: 12px 0px 80px 0px;
+        padding: 12px 0px 0px 0px;
 
         ul{
             display: grid;
@@ -1508,7 +1514,7 @@ button {
 
 
     .section__master{
-        margin-top: 190px;
+        margin-top: 140px;
 
         h2{
             font-size: 11vw;
@@ -1516,6 +1522,14 @@ button {
         }
 
         
+    }
+
+    .nosotros__master, .footer__master{
+        margin-top: 140px;
+    }
+
+    .interes__master{
+        margin-top: 180px;
     }
 
     .interes__master, .faq__master{
@@ -1636,9 +1650,23 @@ button {
     .interItem{
         height: 240px;
     }
+
+    .reloj__master .reloj__lugar {
+        margin-left: 0px;
+    }
+
+    .footer__child-1 {
+         margin-top: 0px; 
+    }
    
 }
 
+
+@media only screen and (max-width: 527px){
+    .footer__child-1 {
+        margin-top: 20px; 
+   }
+}
 
 @media only screen and (max-width: 500px){
 
@@ -1659,6 +1687,7 @@ button {
 
     .nosotros__form-aviso{
         position: inherit;
+        color: $white-place;
     }
 
     .footer__master .footer__services-first {
