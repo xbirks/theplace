@@ -23,18 +23,25 @@ export const metadata = {
   contentLanguage: 'es',
   language: 'es',
   
-  //META
+  // META
   openGraph: {
     title: 'THE PLACE | Gestión inmobiliaria y servicios internacionales',
     description: '10 años ayudando a gestionar tu patrimonio inmobiliario. Ofrecemos servicios personalizados para explorar oportunidades del mercado.',
     url: 'https://www.placevlc.com',
     type: 'website',
-    image: 'https://theplace.vercel.app/seo/meta-1200x630.jpg',
+    images: [
+      {
+        url: 'https://placevlc.com/seo/meta-1200x630.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Descripción de la imagen',
+      },
+    ],
     site_name: 'THE PLACE | Gestión inmobiliaria y servicios internacionales',
     locale: 'es_ES',
   },
 
-  //TWITTER
+  // TWITTER
   twitter: {
     card: 'summary_large_image',
     site: '@placevlc',
@@ -70,12 +77,12 @@ export default function RootLayout({ children }) {
     <html lang="es">
 
       <head>
-      <link rel="stylesheet" href="https://use.typekit.net/jei6cdb.css"></link>
-      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-      <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap" rel="stylesheet"></link>
-      <meta name="theme-color" content="#F5CA3D"></meta>
-      <meta name="background-color" content="#D21C3F"></meta>
+      <link rel="stylesheet" href="https://use.typekit.net/jei6cdb.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+      <meta name="theme-color" content="#DB914E" />
+      <meta name="background-color" content="#DB914E" />
       </head>
     
   
