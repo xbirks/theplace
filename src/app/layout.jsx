@@ -29,7 +29,7 @@ export const metadata = {
     description: '10 años ayudando a gestionar tu patrimonio inmobiliario. Ofrecemos servicios personalizados para explorar oportunidades del mercado.',
     url: 'https://www.placevlc.com',
     type: 'website',
-    image: 'https://theplace.vercel.app/seo/meta-1200x630.jpg',
+    image: 'https://placevlc.com/seo/meta-1200x630.jpg',
     site_name: 'THE PLACE | Gestión inmobiliaria y servicios internacionales',
     locale: 'es_ES',
   },
@@ -50,6 +50,7 @@ export const metadata = {
   appleTouchStartupImage: 'https://placevlc.com/seo/180x180_apple_touch_icon.png',
 
   
+
 
 
   //SECURITY
