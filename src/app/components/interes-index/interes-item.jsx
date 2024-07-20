@@ -6,7 +6,7 @@ function InteresItem({imagen, alt, fecha, titulo, enlace}){
 
     return(
         <div className="interes__master-item">
-            <Image src={imagen} alt={alt} width={300} height={300}></Image>
+            <Image src={imagen} alt={alt} width={300} height={300} loading="lazy"></Image>
             <div className="interes__item-data">
                 <p>{fecha}</p>
                 <h3>{titulo}</h3>

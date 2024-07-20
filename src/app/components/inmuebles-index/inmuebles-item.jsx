@@ -8,7 +8,7 @@ function InmueblesItem({ src, titulo, descripcion, caracteristicas, boton, link,
     return (
         <div className="inmuebles__master">
             <div className="inmuebles__image">
-                <Image src={src} alt={alt} width={1200} height={500} />
+                <Image src={src} alt={alt} width={1200} height={500} loading="lazy" />
             </div>
             <div className="inmuebles__datos">
                 <h3 className="inmuebles__datos-titulo">{titulo}</h3>
