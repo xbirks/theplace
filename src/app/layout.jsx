@@ -59,6 +59,7 @@ export const metadata = {
   
 
 
+
   //SECURITY
   contentSecurityPolicy: "default-src 'self'; img-src 'self' https://www.placevlc.com; script-src 'self' https://apis.google.com",
   referrerPolicy: 'no-referrer-when-downgrade', 
