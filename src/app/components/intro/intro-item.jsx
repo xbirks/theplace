@@ -11,7 +11,7 @@ function IntroItem({imgSrc, title, alt, enlace}) {
             <Link href={enlace} smooth={true} duration={500}>
                 
                 <div className="introItem__container">
-                    <Image src={imgSrc} alt={alt} width={550} height={460} ></Image>
+                    <Image src={imgSrc} alt={alt} width={550} height={460} loading="lazy"></Image>
                     <h3>{title}</h3>
                 </div>
                 

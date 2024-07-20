@@ -67,9 +67,9 @@ function InmueblesPadre() {
         />
        
             <div className="inmuebles__padre">
-                <button className="inmuebles__left-arrow" onClick={handlePrev}><Image className="arrow-normal" src={leftArrow}></Image><Image className="arrow-white" src={leftArrowWhite}></Image></button>
+                <button aria-label="anterior inmueble" className="inmuebles__left-arrow" onClick={handlePrev}><Image className="arrow-normal" src={leftArrow} alt="flecha para ir al anterior inmueble"></Image><Image className="arrow-white" src={leftArrowWhite} alt="flecha para ir al anterior inmueble"></Image></button>
                 <InmueblesItem {...datosInmuebles[currentIndex]} />
-                <button className="inmuebles__right-arrow" onClick={handleNext}><Image className="arrow-normal" src={rightArrow}></Image><Image className="arrow-white" src={rightArrowWhite}></Image></button>
+                <button aria-label="Siguiente inmueble" className="inmuebles__right-arrow" onClick={handleNext}><Image className="arrow-normal" src={rightArrow} alt="flecha para ir al siguiente inmueble"></Image><Image className="arrow-white" src={rightArrowWhite} alt="flecha para ir al siguiente inmueble"></Image></button>
             </div>
 
             <BannerButtons />

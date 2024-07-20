@@ -22,13 +22,13 @@ function Footer() {
                     <div className="footer__services-first">
                         <Link href="#internacional">
                             <div className="footer__services-item">
-                                <Image src={InterBg} width="300" height="200"></Image>
+                                <Image src={InterBg} width="300" height="200" alt="Casa unifamiliar moderna cerca de Valencia en alquiler por Placevlc"></Image>
                                 <h4>Servicios internacionales</h4>
                             </div>
                         </Link>
                         <Link href="#inmuebles">
                             <div className="footer__services-item">
-                                <Image src="https://www.apartup.com/alquiler-larga-estancia/fotos/2/1645724983a00c8600d3e42bb93ab8b7d5de19e260/huge1645725010d52c3fae40030638b061d82596bab441.jpg" width="300" height="200"></Image>
+                                <Image src="https://www.apartup.com/alquiler-larga-estancia/fotos/2/1645724983a00c8600d3e42bb93ab8b7d5de19e260/huge1645725010d52c3fae40030638b061d82596bab441.jpg" width="300" height="200" alt="Domicilio moderno en zona de lujo cerca de Valencia alquilado por Placevlc"></Image>
                                 <h4>Gestión de inmuebles</h4>
                             </div>
                         </Link>
@@ -46,7 +46,7 @@ function Footer() {
                     <Reloj />
                     <div className="footer__h-line"></div>
                     <div className="footer__enlaces">
-                        <div className="footer__instagram"><Image src={InstagramIcon}></Image><Link href="https://www.instagram.com/theplacevlc/"> Instagram</Link></div>
+                        <div className="footer__instagram"><Image src={InstagramIcon} alt="instagram icon"></Image><Link href="https://www.instagram.com/theplacevlc/"> Instagram</Link></div>
                         <Link href="mailto:neus@placevlc.com" className="footer__child-1">neus@placevlc.com</Link>
                         <Link href="mailto:hugo@placevlc.com">hugo@placevlc.com</Link>
                         <Link href="../pages/privacidad">Política de privacidad</Link>
