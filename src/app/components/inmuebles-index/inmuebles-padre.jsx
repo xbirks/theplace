@@ -14,6 +14,15 @@ import PisoCentro from '../../assets/img/airbnb-piso-centro-1.jpg'
 
 const datosInmuebles = [
     {
+        src: 'https://www.apartup.com/alquiler-larga-estancia/fotos/2/1645724983a00c8600d3e42bb93ab8b7d5de19e260/1645725029650f31554349d17c75a1af45b8eda95e.jpg',
+        alt:'imagen piso Carrasqueta Deluxe',
+        titulo: 'Carrasqueta Deluxe',
+        descripcion: 'El apartamento dispone de una zona de lavandería con lavadora y secadora, para que puedas tener tu ropa limpia y seca rápidamente. Además, la cocina está equipada con todo lo necesario para que disfrutes de tu estancia, incluido lavavajillas. Hay conexión wifi y Smart TV.',
+        caracteristicas: ['Piscina', 'Acceso a internet', 'Aire acondicionado', 'Jardín'],
+        boton: 'Ver en ApartUP',
+        link: 'https://www.airbnb.es/rooms/44134906?viralityEntryPoint=1&unique_share_id=00DC64BD-F83C-47FA-9F14-19951CA89278&slcid=b228000452164a7683c36b3cc03684b7&s=76&feature=share&adults=1&channel=native&slug=b4EcRa95&source_impression_id=p3_1720377406_P31ntwIDyTxE94cL',
+    },
+    {
         src: PisoTuria,
         alt:'imagen piso Rio Turia',
         titulo: 'Piso en Río Turia',
@@ -27,15 +36,6 @@ const datosInmuebles = [
         'Secadora',],
         boton: 'Ver en Airbnb',
         link: 'https://www.airbnb.es/rooms/810254726997200920?viralityEntryPoint=1&unique_share_id=6B662A9F-207B-4E31-8C96-4573EAA60210&slcid=544585e07fd04e3492e36d10ff2d728b&s=76&feature=share&adults=1&channel=native&slug=AG72bYxC&source_impression_id=p3_1719665788_P3SpCkZY0yKRDemp',
-    },
-    {
-        src: 'https://www.apartup.com/alquiler-larga-estancia/fotos/2/1645724983a00c8600d3e42bb93ab8b7d5de19e260/1645725029650f31554349d17c75a1af45b8eda95e.jpg',
-        alt:'imagen piso Carrasqueta Deluxe',
-        titulo: 'Carrasqueta Deluxe',
-        descripcion: 'El apartamento dispone de una zona de lavandería con lavadora y secadora, para que puedas tener tu ropa limpia y seca rápidamente. Además, la cocina está equipada con todo lo necesario para que disfrutes de tu estancia, incluido lavavajillas. Hay conexión wifi y Smart TV.',
-        caracteristicas: ['Piscina', 'Acceso a internet', 'Aire acondicionado', 'Jardín'],
-        boton: 'Ver en ApartUP',
-        link: 'https://www.airbnb.es/rooms/44134906?viralityEntryPoint=1&unique_share_id=00DC64BD-F83C-47FA-9F14-19951CA89278&slcid=b228000452164a7683c36b3cc03684b7&s=76&feature=share&adults=1&channel=native&slug=b4EcRa95&source_impression_id=p3_1720377406_P31ntwIDyTxE94cL',
     },
     {
         src: PisoCentro,

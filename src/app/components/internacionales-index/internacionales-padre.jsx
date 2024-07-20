@@ -23,13 +23,13 @@ const datosInternacionales = [
         imagen: TarjetaIcon,
         alt:'icono de una tarjeta',
         titulo: 'Gestión de visado',
-        descripcion: 'Contacta con nuestro estudio de abogados de extranjería de confianza .',
+        descripcion: 'Ponte en contacto con nuestro estudio de abogados de extranjería de confianza para gestionar tu visado.',
     },
     {
         imagen: FurgoIcon,
         alt:'icono de una furgoneta',
-        titulo: 'Traslados',
-        descripcion: 'Desplázate cómodamente desde cualquier ciudad, nosotros lo coordinaremos.',
+        titulo: 'Traslados y desplazamientos',
+        descripcion: 'Desplázate de manera cómoda y sin preocupaciones desde cualquier ciudad, nos encargaremos de coordinar todos los detalles.',
     },
     {
         imagen: ContratoIcon,
@@ -41,12 +41,12 @@ const datosInternacionales = [
         imagen: CarteraIcon,
         alt:'icono de una cartera',
         titulo: 'Asesoramiento legal integral',
-        descripcion: 'Orientación en cuestiones legales y sucesorias para tranquilidad futura.',
+        descripcion: 'Brindamos orientación experta en cuestiones legales y sucesorias, para que disfrutes de una tranquilidad futura.',
     },
     {
         imagen: OtrosIcon,
         alt:'icono de una lupa buscando',
-        titulo: 'Otros',
+        titulo: 'Otros servicios',
         descripcion: 'Somos tu contacto de confianza para cualquier cosa que necesites, solo tienes que contactarnos y nos pondremos en marcha.',
     },
     // Añade más objetos para más inmuebles

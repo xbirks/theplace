@@ -10,12 +10,12 @@ function InteresItem({imagen, alt, fecha, titulo, enlace}){
             <div className="interes__item-data">
                 <p>{fecha}</p>
                 <h3>{titulo}</h3>
-                <StandardButton
+            </div>
+            <StandardButton
                     link={enlace}
                     title="Leer noticia"
                     style=""
                 />
-            </div>
         </div>
     );
 }
