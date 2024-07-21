@@ -82,47 +82,56 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
-
         <meta name="theme-color" content="#DB914E" />
         <meta name="background-color" content="#DB914E" />
-
         <link rel="canonical" href="https://placevlc.com" hreflang="es-ES" />
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="https://placevlc.com/seo/favicon_500x500.jpg" title="Ícono de la pestaña" type="image/png" />
         <link rel="apple-touch-icon" sizes="180x180" href="https://placevlc.com/seo/ios_180x180.jpg" />
-
-        <script type="application/ld+json">{`
-          [{
-            "@context": "http://schema.org",
-            "@type" : "WebSite",
-            "url" : "https://placevlc.com",
-            "name" : "The Place Valencia"
-          },
-          {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "name": "The Place Valencia",
-            "description": "Gestión inmobiliaria y servicios internacionales en Valencia",
-            "email": "hugo@placevlc.com",
-            "logo": "https://placevlc.com/seo/favicon_500x500.jpg",
-            "url": "https://placevlc.com"
-          },{
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "logo": "https://placevlc.com/seo/favicon_500x500.jpg",
-            "name": "The Place Valencia",
-            "description": "Gestión inmobiliaria y servicios internacionales en Valencia",
-            "image": "https://placevlc.com/seo/meta-1200x630.jpg",
-            "url": "https://placevlc.com",
-            "hasMap": "#",
-            "telephone": "604975558",
-            "priceRange": "$$",
-           
-          }]
-        `}</script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "http://schema.org",
+                "@type": "WebSite",
+                "url": "https://placevlc.com",
+                "name": "The Place Valencia"
+              },
+              {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "The Place Valencia",
+                "description": "Gestión inmobiliaria y servicios internacionales en Valencia",
+                "email": "hugo@placevlc.com",
+                "logo": "https://placevlc.com/seo/favicon_500x500.jpg",
+                "url": "https://placevlc.com"
+              },
+              {
+                "@context": "http://schema.org",
+                "@type": "LocalBusiness",
+                "logo": "https://placevlc.com/seo/favicon_500x500.jpg",
+                "name": "The Place Valencia",
+                "description": "Gestión inmobiliaria y servicios internacionales en Valencia",
+                "image": "https://placevlc.com/seo/meta-1200x630.jpg",
+                "url": "https://placevlc.com",
+                "hasMap": "#",
+                "telephone": "604975558",
+                "priceRange": "$",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Pl. Rafael Atard, 20A",
+                  "addressLocality": "Manises",
+                  "addressRegion": "Valencia",
+                  "postalCode": "46940"
+                }
+              }
+            ])
+          }}
+        />
       </head>
       <body>
-        <div className="master__place"> 
+        <div className="master__place">
           <Header />
           {children}
           <Footer />
@@ -131,3 +140,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
