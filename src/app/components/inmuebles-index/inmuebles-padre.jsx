@@ -25,7 +25,7 @@ const datosInmuebles = [
     {
         src: PisoTuria,
         alt:'imagen piso Rio Turia',
-        titulo: 'Piso en Río Turia',
+        titulo: 'Apartamento en Campanar',
         descripcion: 'El apartamento ha sido recién reformado y cuenta con 135 metros cuadrados , una zona amplia de estar en la que se encuentra la cocina y el salón, tres habitaciones cada una con aire acondicionado y grandes armarios y dos baños completos.',
         caracteristicas: ['Cocina', 'Wifi',
         'Zona para trabajar',
@@ -40,11 +40,29 @@ const datosInmuebles = [
     {
         src: PisoCentro,
         alt:'imagen apartamento en la playa',
-        titulo: 'Piso en Valencia',
+        titulo: 'Apartamento en ubicación ideal',
         descripcion: 'El apartamento dispone de una zona de lavandería con lavadora y secadora, para que puedas tener tu ropa limpia y seca rápidamente. Además, la cocina está equipada con todo lo necesario para que disfrutes de tu estancia, incluido lavavajillas. Hay conexión wifi y Smart TV.',
         caracteristicas:['Cocina', 'Wifi', 'Zona para trabajar', 'Vistas al perfil urbano', 'Acceso a la playa',],
         boton: 'Ver en Airbnb',
-        link: 'https://www.apartup.com/alquiler-larga-estancia/casa-pobla-de-vallbona-carrasqueta-deluxe-381073.html',
+        link: 'https://www.airbnb.es/rooms/44134906?source_impression_id=p3_1721552267_P3lu0YiJjBUbiEIc',
+    },
+    {
+        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1189223841839548811/original/383e7ab6-f46f-476f-9120-6b0f602c272e.jpeg?im_w=1440',
+        alt:'imagen apartamento Estoreta 1',
+        titulo: 'Estoreta 1',
+        descripcion: 'Este encantador apartamento en el centro de Valencia, cerca del estadio de fútbol Mestalla, es ideal para familias o amigos. Con capacidad para 4 personas, cuenta con una habitación, sofá cama, aseo, y cocina totalmente equipada. La entrada desde la calle puede usarse como terraza. Los huéspedes tienen acceso a todos los electrodomésticos y utensilios necesarios para una estancia cómoda.',
+        caracteristicas:['Cocina', 'Wifi', 'Aire acondicionado', 'Lavadora', 'Patio privado',],
+        boton: 'Ver en Airbnb',
+        link: 'https://www.airbnb.es/rooms/1189223841839548811?source_impression_id=p3_1721551589_P3BDtmx4R3t8MpKM',
+    },
+    {
+        src: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1189222171541924168/original/2cec2119-36c5-431c-8489-a36a3f662f17.jpeg?im_w=1200',
+        alt:'imagen apartamento Estoreta 2',
+        titulo: 'Estoreta 2',
+        descripcion: 'Este encantador apartamento en el centro de Valencia, cerca del estadio de fútbol Mestalla, es perfecto para una escapada en familia o con amigos. Alojamiento para 4 personas, con una habitación, sofá cama, aseo con ducha y lavadora, y una cocina totalmente equipada. La entrada desde la calle puede utilizarse como terraza. Los huéspedes tienen acceso a todos los electrodomésticos y utensilios necesarios para una estancia agradable.',
+        caracteristicas:['Cocina', 'Wifi', 'Aire acondicionado', 'Lavadora', 'Patio privado',],
+        boton: 'Ver en Airbnb',
+        link: 'https://www.airbnb.es/rooms/1189222171541924168?source_impression_id=p3_1721552311_P3-R4MKKvRntHjW_',
     },
     
 ];
