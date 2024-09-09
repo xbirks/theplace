@@ -31,7 +31,7 @@ const NosotrosForm = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    subject: `Mensaje de ${formData.name}`,
+                    subject: `Solicitud de contacto de ${formData.name}`,
                     message: `
                         <p>Nombre: ${formData.name}</p>
                         <p>Email: ${formData.email}</p>
